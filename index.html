@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Krasiy | Skincare and Beauty</title>
+    <style>
+        /* Базовые настройки (шрифт, цвет) */
+        body {
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            color: #1a1a1a;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* --- Шапка сайта (Логотип и меню) --- */
+        header {
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 400;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .nav-links {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* --- Главный баннер (Hero Image) --- */
+        .hero {
+            /* СЮДА ВСТАВИТЬ ГЛАВНУЮ КАРТИНКУ */
+            background-image: url('hero-image.jpg'); 
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ffffff; /* Цвет текста на баннере */
+        }
+
+        .hero-text h1 {
+            font-size: 56px;
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.3); /* Тень для читаемости */
+        }
+
+        .hero-text p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        /* --- Сетка товаров (Коллекция) --- */
+        .collection-title {
+            text-align: center;
+            margin: 80px 0 40px;
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 60px;
+            padding: 0 80px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            text-align: center;
+        }
+
+        /* Место под картинки товаров */
+        .product-image {
+            width: 100%;
+            height: 450px;
+            background-color: #f9f9f9;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 25px;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-image:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        /* Картинки конкретных товаров */
+        .img-1 { background-image: url('product-1.jpg'); }
+        .img-2 { background-image: url('product-2.jpg'); }
+        .img-3 { background-image: url('product-3.jpg'); }
+
+        .product-card h3 {
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0 0 15px;
+            letter-spacing: 1px;
+        }
+
+        .product-card p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        /* --- Подвал (Контакты) --- */
+        footer {
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        footer h2 {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 3px;
+            margin-bottom: 20px;
+        }
+
+        footer p {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 13px;
+            color: #aaaaaa;
+            margin-bottom: 40px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 14px 40px;
+            border: 1px solid #ffffff;
+            color: #ffffff;
+            text-decoration: none;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="nav-links">Collection</div>
+    <div class="logo">Anna Krasiy</div>
+    <div class="nav-links">About</div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Pure Elegance</h1>
+        <p>Advanced Skincare Concept</p>
+    </div>
+</section>
+
+<div class="collection-title">The Signature Line</div>
+
+<section class="products">
+    <!-- Товар 1 -->
+    <div class="product-card">
+        <div class="product-image img-1"></div>
+        <h3>Radiant Glow Serum</h3>
+        <p>A weightless formula designed to illuminate your complexion from within. Enriched with rare botanical extracts.</p>
+    </div>
+    
+    <!-- Товар 2 -->
+    <div class="product-card">
+        <div class="product-image img-2"></div>
+        <h3>Velvet Night Cream</h3>
+        <p>Deep hydration and cellular repair while you sleep. The ultimate restorative treatment for tired skin.</p>
+    </div>
+
+    <!-- Товар 3 -->
+    <div class="product-card">
+        <div class="product-image img-3"></div>
+        <h3>Essence of Pearl</h3>
+        <p>An exquisite toning essence that refines pores and preps the skin for perfect moisture absorption.</p>
+    </div>
+</section>
+
+<footer>
+    <h2>Contact Us</h2>
+    <p>This is a conceptual project. For collaboration inquiries, please reach out.</p>
+    <!-- Замени адрес электронной почты ниже на свой -->
+    <a href="mailto:contact@annakrasiy.com?subject=Inquiry" class="contact-btn">Get in touch</a>
+</footer>
+
+</body>
+</html>
